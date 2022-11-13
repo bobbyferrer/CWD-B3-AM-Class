@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+   <!-- Compiled and minified CSS -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+   <!-- Icons -->
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="main.css">
+  <title>Creative Design</title>
+ 
+</head>
+<body>
+  <div class="container">
+   <!-- Headers -->
+  <h1 class="purple-text grey">Heading 1</h1>
+  <h2>Heading 2</h2>
+  <h2>Heading 3</h3>
+  <h2>Heading 4</h2>
+  <h2>Heading 5</h2>
+  <h2>Heading 6</h2>
+
+  <!-- Blockquotes -->
+  <blockquote>This is an example that uses the blockqoute tag</blockquote>
+ 
+  <!-- Flow Text -->
+  <p class="flow-text">I am Flow Text</p>
+
+  <button class="btn black-text waves-effect waves-light yellow darken-2">click</button>
+  
+  <button class="btn-large white-text waves-effect waves-yellow deep-purple darken-2">click</button>
+
+  <i class="material-icons large purple-text">add_a_photo</i>
+  
+  </div>
+
+  <!-- Fixed action button -->
+  <div class="fixed-action-btn toolbar">
+    <a class="btn-floating btn-large red">
+     <i class="material-icons">mode_edit</i>
+    </a>
+    <ul>
+      <li>
+        <a class="red" href="index.html">
+          <i class="material-icons">insert_chart</i>
+        </a>
+      </li>
+      <li>
+        <a class="deep-orange" href="colors.html">
+          <i class="material-icons">add</i>
+        </a>
+      </li>
+      <li>
+        <a class="deep-purple" href="#">
+          <i class="material-icons">grade</i>
+        </a>
+      </li>
+      <li>
+        <a class="lime" href="buttons-icons.html">
+          <i class="material-icons">close</i>
+        </a>
+      </li>
+    </ul>
+  </div>
+  
+  
+
+
+
+  <!-- Jquery CDN -->
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+   <!-- Compiled and minified JavaScript -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+   <script>
+    $(document).ready(function() {
+      // Init Dropdown
+      $(".dropdown-trigger").dropdown();
+      // Init Fixed action button
+      $('.fixed-action-btn').floatingActionButton({
+        toolbarEnabled: true
+      });
+    });
+  </script>
+</body>
+</html>
+
+
+<!-- Inline CSS -->
+<!-- Internal CSS -->
+<!-- External CSS -->

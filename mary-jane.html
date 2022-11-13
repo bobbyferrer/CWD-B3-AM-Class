@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Compiled and minified CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <title>Materialize CSS</title>
+  
+</head>
+<body>
+  <div class="container">
+    <h2>Cards</h2>
+    <div class="row">
+        <div class="col s12 m6">
+          <!-- Card 1-->
+          <div class="card">
+            <div class="card-image">
+              <img src="images/img5.jpg" alt="">
+              <a href="#" class="halfway-fab btn-floating pink pulse">
+                <i class="material-icons">favorite</i>  
+              </a>
+            </div>  
+            <div class="card-content">
+              <span class="card-title">Yockie D Pogi</span>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque nesciunt eveniet magnam expedita alias, sint deleniti maiores quibusdam nisi, ut quae rem! Laboriosam dignissimos sed id exercitationem facilis aperiam! Recusandae.</p>
+            </div>
+            <div class="card-action">
+                <a href="#">Cute Picture</a>
+                <a href="#">Bear post</a>
+            </div>
+          </div>
+          
+          <!-- end of col  -->
+        </div>
+        <div class="col s12 m6">
+         <!-- Card 2 -->
+         <div class="card">
+          <div class="card-image">
+            <img src="images/img4.jpg" alt="">
+            <a href="#" class="halfway-fab btn-floating pink pulse">
+              <i class="material-icons">favorite</i>  
+            </a>
+          </div>  
+          <div class="card-content">
+            <span class="card-title">Yockie D Pogi</span>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae pariatur deleniti ipsum perferendis harum temporibus mollitia necessitatibus quasi ut! Sed aperiam distinctio earum ratione voluptatibus, dicta rerum error similique eius.</p>
+          </div>
+          <div class="card-action">
+              <a href="#">Cute Picture</a>
+              <a href="#">Bear post</a>
+          </div>
+      </div>
+      <!-- Card 3 card reveal -->
+     <div class="card">
+      <div class="card-image waves-effect waves-block waves-light">
+        <img class="activator" src="images/img2.jpg">
+      </div>
+      <div class="card-content">
+        <span class="card-title activator grey-text text-darken-4">Dog Love
+          <i class="material-icons right">more_vert</i>
+        </span>
+        <p>
+          <a href="#">This is a link</a>
+        </p>
+      </div>
+      <div class="card-reveal">
+        <span class="card-title grey-text text-darken-4">
+          Card Title
+          <i class="material-icons right">close</i>
+        </span>
+        <p>Here is some more information about this product that is only revealed once clicked on.</p>
+      </div>
+     </div>
+     <!-- Card 4 Tabs in Cards -->
+     <div class="card">
+      <div class="card-content">
+          <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+      </div>
+      <div class="card-tabs">
+          <ul class="tabs tabs-fixed-width">
+            <li class="tab">
+              <a href="#test4">Test 1</a>
+            </li>
+            <li class="tab">
+              <a class="active" href="#test5">Test 2</a>
+            </li>
+            <li class="tab">
+              <a href="#test6">Test 3</a>
+            </li>
+          </ul>
+       </div>
+        <div class="card-content grey lighten-4">
+          <div id="test4">I am a very simple card</div>
+          <div id="test5">I am good at containing small bits of information.</div>
+          <div id="test6">I am convenient because I require little markup to use effectively.</div>
+        </div>
+    </div>
+     <!-- end of row -->
+    </div>
+    <!-- end of container -->
+ </div>
+
+
+<!-- Jquey CDN -->
+<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+ <!-- Compiled and minified JavaScript -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+ <script>
+   $(document).ready(function(){
+    $('.tabs').tabs();
+  });
+ </script>
+</body> 
+</html>
+
+      
+ 

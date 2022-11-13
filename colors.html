@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <!-- Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <title>Colors</title>
+</head>
+<body class="grey darken-4">
+  <div class="container">
+    <h1 class="lime-text">Color</h1>
+
+    <div class="card-panel purple darken-2 white-text">This is a card panel with a teal lighten-2 class</div>
+
+    <div class="card-panel">
+      <span class="blue-text text-darken-4">This is a card panel with dark blue text</span>
+    </div>
+  </div>
+
+  <!-- Fixed action button -->
+  <div class="fixed-action-btn toolbar">
+    <a class="btn-floating btn-large red">
+     <i class="material-icons">mode_edit</i>
+    </a>
+    <ul>
+      <li>
+        <a class="red" href="index.html">
+          <i class="material-icons">insert_chart</i>
+        </a>
+      </li>
+      <li>
+        <a class="deep-orange" href="colors.html">
+          <i class="material-icons">add</i>
+        </a>
+      </li>
+      <li>
+        <a class="deep-purple" href="#">
+          <i class="material-icons">grade</i>
+        </a>
+      </li>
+      <li>
+        <a class="lime" href="buttons-icons.html">
+          <i class="material-icons">close</i>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  
+
+
+<!-- Jquery CDN -->
+<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <script>
+    $(document).ready(function() {
+      // Init Dropdown
+      $(".dropdown-trigger").dropdown();
+      // Init Fixed action button
+      $('.fixed-action-btn').floatingActionButton({
+        toolbarEnabled: true
+      });
+    });
+  </script>
+</body>
+</html>

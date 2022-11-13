@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="x-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <!----Icons-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <title>Shopfee Mall</title>
+    </head>
+    <body class="grey darken-4">
+     <div class="navbar-fixed">
+        <nav class="#f4511e deep-orange darken-1">
+            <div class="container"> 
+              <div class="nav-wrapper">
+                  <a href="" class="brand-logo">Shopfee</a>
+                  <a href="#" data-target="slide-out" class="sidenav-trigger">
+                    <i class="material-icons">menu</i>
+                  </a>
+                  <ul id="nav-mobile" class="right hide-on-med-and-down"> 
+                      <li class="active">    
+                          <a href="">Home</a>
+                      </li>
+                      <li>    
+                          <a href="">About</a>
+                      </li>
+                      <li>    
+                          <a href="">Contact Us</a>
+                      </li>
+                      <li>    
+                          <a href="">Login/Signup</a>
+                      </li>
+                      <li>    
+                          <a href="!#" class="dropdown-trigger" data-target="dropdown1"> 
+                              <i class="material-icons">arrow_drop_down</i>
+                          </a>
+                      </li>
+                   </ul>
+               </div>
+            </div>
+        </nav>
+      </div>
+
+      <!-- Sidenav Structure -->
+      <ul id="slide-out" class="sidenav">
+        <li>
+          <div class="user-view">
+            <div class="background">
+              <img src="images/img2.jpg" alt="">
+            </div>
+            <a href="#user">
+              <img src="images/img5.jpg" alt="" class="circle">
+            </a>
+            <a href="#">
+              <span class="white-text name">Shari Von Sr.</span>
+            </a>
+            <a href="#">
+              <span class="white-text email">shari.sr@gmail.com</span>
+            </a>
+          </div>
+        </li>
+        <li class="active">    
+          <a href="">Home</a>
+        </li>
+        <li>    
+            <a href="">About</a>
+        </li>
+        <li>    
+            <a href="">Contact Us</a>
+        </li>
+        <li>    
+            <a href="">Login/Signup</a>
+        </li>
+        <li>    
+            <a href="!#" class="dropdown-trigger" data-target="dropdown1"> 
+                <i class="material-icons">arrow_drop_down</i>
+            </a>
+        </li>
+      </ul>
+      
+      <!--------- dropdown structure-->
+      <ul id="dropdown1" class="dropdown-content">
+        <li><a href="#!">one</a></li>
+        <li><a href="#!">two</a></li>
+        <li class="divider"></li>
+        <li><a href="#!">three</a></li>
+      </ul>
+
+        <div class="container">
+            <h1 class="amber-text ">Shopfee Mall</h1>
+                <a class="waves-effect waves-light btn #f4511e deep-orange darken-1">
+                  <i class="material-icons left">shopping_cart</i>
+                  Add to Cart
+                </a>
+                <a class="waves-effect waves-light btn #f4511e deep-orange darken-1">
+                  <i class="material-icons left">verified_user</i>
+                  Shopfee Loyalty
+                </a>
+                <a class="waves-effect waves-light btn #f4511e deep-orange darken-1">
+                  <i class="material-icons left">local_atm</i>
+                  ₱1 Deals
+                </a>
+                <h5 class="amber-text">OCTOBER 15 PAYDAY SALE!!!</h5>
+                <a class="waves-effect waves-light btn #f4511e deep-orange darken-1">
+                  <i class="material-icons left ">send</i>15% CASHBACK ON LOAD
+                </a>
+              <div class="fixed-action-btn">
+                  <a class="btn-floating btn-large red">
+                    <i class="large material-icons">mode_edit</i>
+                  </a>
+                  <ul>
+                    <li>
+                      <a class="btn-floating red">
+                        <i class="material-icons">insert_chart</i>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="btn-floating yellow darken-1">
+                        <i class="material-icons">format_quote</i>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="btn-floating green">
+                        <i class="material-icons">publish</i>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="btn-floating blue">
+                        <i class="material-icons">attach_file</i>
+                      </a>
+                    </li>
+                  </ul>
+              </div>    
+          </div>
+          <div style="height: 2000px;"></div>
+
+
+        <!------Jquery CDN -->
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+            <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+     
+
+      <script>
+          
+
+          $(document).ready(function() {
+            // Dropdown Init
+            $(".dropdown-trigger").dropdown();
+            //  Floating action button
+            $('.fixed-action-btn').floatingActionButton();
+            // Sidenav init
+            $('.sidenav').sidenav({
+              edge: 'right',
+              inDuration: 1000,
+              outDuration: 1000
+            });
+          });          
+         
+         
+     </script>
+  </body>
+</html>

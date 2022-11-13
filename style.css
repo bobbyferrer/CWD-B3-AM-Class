@@ -1,0 +1,7 @@
+.collection .collection-item.active {
+  background: #e91e63;
+}
+
+.collection a.collection-item {
+  color: #cddc39;
+}
